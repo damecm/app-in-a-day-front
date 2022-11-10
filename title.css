@@ -11,9 +11,6 @@ h2 {
    transform: rotate(180deg);
 }
 
-.title-wrapper {
-  
-}
 
 .title-wrapper > div {
   display: grid;
