@@ -6,17 +6,20 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: #131a2d;
 }
 
 .header-wrapper {
     display: flex;
     justify-content: center;
+    color: #119dbe;
 }
 
 
 .controls-wrapper {
     display: flex;
     justify-content: space-around;
+    color: #119dbe;
 }
 
 .drop-down-wrapper {
@@ -28,6 +31,7 @@ body {
 .timer-wrapper {
     display: flex;
     justify-content: center;
+    color: #119dbe;
 }
 
 .clock-wrapper {
@@ -47,13 +51,16 @@ body {
 
 .workout-name-wrapper {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
+    color: #119dbe;
+    font-family: 'Black Ops One', cursive;
+    font-size: 50px;    
 }
 
 .workout-demo-img-wrapper {
     display: flex;
     justify-content: center;
-
+    border-bottom: 10px;
 }
 
 .workout-demo-img-wrapper img {
