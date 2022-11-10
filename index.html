@@ -4,9 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bottega Burner</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+    <div class="container">
+
+
+            <div class="header-wrapper">
+                <div class="logo-img-wrapper"></div>
+                <div class="title-wrapper">
+                    <h1>Bottega Burner</h1>
+                    <div class="logo-img-wrapper"></div>
+                </div>
+            </div>
+
+            <div class="controls-wrapper">
+
+                <div class="drop-down-wrapper">
+                    <p>Select Rounds</p>
+                </div>
+                <button onclick="timer(0.5)">Start</button>
+            </div>
+
+            <div class="timer-wrapper">
+                <div class="clock-wrapper">
+                    <h1 id="timer">0</h1>
+                </div>
+            </div>
+
+            <div class="workout-name-wrapper">
+                <h4 id="workout-title">Push Ups</h4>
+            </div>
+
+            <div class="workout-demo-img-wrapper">
+                <img src="./images/Pushup-Re-do-1.webp" alt="">
+
+            </div>
+    </div>
+</body>
+<script>
+
+function stopTime(timerInterval) {
+            clearInterval(timerInterval);
+        }
+
+        function start(timerInterval,run_timer,timeLeft, secs) {
+            timerInterval = setInterval(() => {
+                run_timer = run_timer += 1;
+                timeLeft = secs - run_timer;
+                const count = run_timer
+                console.log("TIMER I : ", run_timer);
+                document.getElementById('timer').innerHTML = `Elapsed : ${count} Secs <br/> Remaining :${timeLeft} Secs`;
+
+                if(timeLeft === 0){
+                    stopTime(timerInterval);
+                }
+            }, 1000);
+        }
+
+    timer = (time=1) => {
+        const secs = time * 60;
+        const miliSecs = secs * 1000;
+        const sec_arr = [];
+        var run_timer = -1;
+        let timerInterval = null;
+        let timeLeft = secs;
+
+        start(timerInterval,run_timer,timeLeft,secs);
+    }
+</script>
+</html>
+
+
+    
+
+
+
+
+
+
     
 </body>
 </html>
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+
+.controls-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.drop-down-wrapper {
+    border: 0.5px solid black;
+    display: flex;
+
+}
+
+.timer-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.clock-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid black;
+    width: 350px;
+    height: 350px;
+    border-radius: 350px;
+    margin: 15px;
+}
+
+#timer {
+    font-size: 35px;
+}
+
+.workout-name-wrapper {
+    display: flex;
+    justify-content: center;    
+}
+
+.workout-demo-img-wrapper {
+    display: flex;
+    justify-content: center;
+
+}
+
+.workout-demo-img-wrapper img {
+    width: 350px;
+}
